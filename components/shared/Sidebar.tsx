@@ -1,6 +1,4 @@
-"use client";
-
-import { navLinks } from '@/constansts'
+"use client"
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import { link } from 'fs'
 import { PathnameContext } from 'next/dist/shared/lib/hooks-client-context.shared-runtime'
@@ -9,6 +7,7 @@ import Link  from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import { Button } from '../ui/button';
+import { navLinks } from '../../constansts/index'
 
 const Sidebar = () => {
   const pathname =usePathname();
